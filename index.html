@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#152238">
+  <title>For Yashra — A Birthday Wish 🌙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="moon">☾</div>
+
+  <main class="app">
+    <section class="screen active" id="screen1">
+      <div class="eyebrow">A little birthday surprise</div>
+      <h1>For Yashra 🌙</h1>
+      <p class="subtitle">Before the wishes begin… pop all three balloons.</p>
+
+      <div class="balloons" aria-label="Birthday balloons">
+        <button class="balloon b1" onclick="popBalloon(this)" aria-label="Pop balloon"></button>
+        <button class="balloon b2" onclick="popBalloon(this)" aria-label="Pop balloon"></button>
+        <button class="balloon b3" onclick="popBalloon(this)" aria-label="Pop balloon"></button>
+      </div>
+
+      <p class="hint">Tap each balloon 🎈</p>
+    </section>
+
+    <section class="screen" id="screen2">
+      <div class="eyebrow">One more little step</div>
+      <h2>Make a wish 🎂</h2>
+      <p class="subtitle">Tap the cake to blow out the candles.</p>
+
+      <button class="cake" onclick="blowCake()" aria-label="Blow birthday candles">
+        <span class="flame f1">✦</span><span class="flame f2">✦</span><span class="flame f3">✦</span>
+        <span class="cake-emoji">🎂</span>
+      </button>
+
+      <p class="hint">Tap the cake ✨</p>
+    </section>
+
+    <section class="screen" id="screen3">
+      <div class="eyebrow">A few memories</div>
+      <h2>Our Precious Moments 📸</h2>
+      <p class="subtitle">Some moments are ordinary until they become memories.</p>
+
+      <div class="gallery">
+        <article class="memory featured">
+          <div class="media-wrap">
+            <video controls playsinline preload="metadata">
+              <source src="assets/memory-video-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="memory-text">
+            <span>Memory I</span>
+            <strong>Special moments, forever remembered 🌙</strong>
+          </div>
+        </article>
+
+        <article class="memory">
+          <div class="media-wrap">
+            <video controls playsinline preload="metadata">
+              <source src="assets/memory-video-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="memory-text">
+            <span>Memory II</span>
+            <strong>A little piece of happiness ✨</strong>
+          </div>
+        </article>
+
+        <article class="memory photo">
+          <img src="assets/memory-1.jpg" alt="Birthday memory">
+          <div class="memory-text">
+            <span>Memory III</span>
+            <strong>Beautiful days become beautiful memories 🌸</strong>
+          </div>
+        </article>
+
+        <article class="memory photo">
+          <img src="assets/memory-2.jpg" alt="Birthday memory">
+          <div class="memory-text">
+            <span>Memory IV</span>
+            <strong>Moments worth keeping close 🌿</strong>
+          </div>
+        </article>
+
+        <article class="memory photo">
+          <img src="assets/memory-3.jpg" alt="Birthday memory">
+          <div class="memory-text">
+            <span>Memory V</span>
+            <strong>May there always be more reasons to smile 🌷</strong>
+          </div>
+        </article>
+      </div>
+
+      <button class="primary" onclick="nextScreen(4)">Open Your Wishes 💌</button>
+    </section>
+
+    <section class="screen" id="screen4">
+      <div class="eyebrow">A sincere dua for you</div>
+      <h2>For You, Yashra 🌙</h2>
+      <p class="subtitle">There are some wishes that are better written from the heart.</p>
+
+      <button class="envelope" id="envelope" onclick="openLetter()">
+        <span class="seal">✉</span>
+        <span>Tap to open your birthday letter</span>
+        <small>with lots of duas &amp; prayers</small>
+      </button>
+
+      <article class="letter" id="letter">
+        <p class="greeting">🌙✨ Happy Birthday to you dear Yashra ✨🌙</p>
+
+        <p>Today is a very special day because it is the day Allah blessed this world with a beautiful, kind, caring, and wonderful person like you. 🌷</p>
+
+        <p><strong>Happy Birthday, Yashra! 🎂🌙</strong></p>
+
+        <p>On your special day, I sincerely pray that Allah Almighty blesses you with a life full of happiness, peace, success, health, barakah, and countless beautiful moments. May Allah always keep you under His protection and guide you towards everything that is best for you. 🤲🏻🌸</p>
+
+        <p>May Allah accept every halal and sincere dua that you have made, even those duas that you have never shared with anyone. May He turn your dreams into reality and give you something even better than what you ask for. 🌙🤲🏻</p>
+
+        <p>May Allah remove every difficulty from your life, replace every sadness with happiness, every worry with peace, and every hardship with ease. May your face always carry that beautiful smile and may your eyes only shed tears of happiness. 🌷✨</p>
+
+        <h3>🌸 A Special Dua for You</h3>
+        <p>Yashra, you are genuinely one of those people whose presence makes life more beautiful. Your kindness, simplicity, caring nature, respect, and the way you care about the people around you make you a truly special person.</p>
+
+        <p>May Allah always protect this beautiful nature of yours. May He keep your heart pure, your intentions sincere, and your path filled with goodness. 🌿🌙</p>
+
+        <p>May Allah give you a beautiful future and make every step you take a step towards success. May your hard work always bring fruitful results and may Allah bless you with opportunities that take you closer to your dreams. 📚🌸</p>
+
+        <p>May Allah increase you in knowledge, wisdom, confidence, patience, and success. May He make you successful not only in this world but also in the Hereafter. 🤲🏻✨</p>
+
+        <h3>📚 Your Success</h3>
+        <p>I pray that Allah opens every door of success for you.</p>
+        <p>May He bless your studies, your career, your future plans, and every good goal you have. May your efforts never go to waste. May Allah give you the strength to overcome every obstacle and the courage to keep moving forward even when things become difficult. 🌷</p>
+        <p>May you reach places you once only dreamed about. May you achieve things that make you proud of yourself and, most importantly, may you become a reason for your parents to smile with pride. 🌙✨</p>
+
+        <h3>👨‍👩‍👧 A Special Dua for Your Parents</h3>
+        <p>May Allah bless your parents with good health, long life, peace, happiness, and endless blessings. 🤲🏻🌸</p>
+        <p>May Allah reward them for every sacrifice they have made for you and your family. May He remove every worry from their hearts and give them countless reasons to smile.</p>
+        <p>May Allah keep their shadow over you for many, many years and give you the opportunity to make them proud and happy. 🌙</p>
+        <p>May Allah make you a source of peace, happiness, and Sadaqah-e-Jariyah for your parents. May every prayer they have made for you be accepted by Allah. Ameen. 🤲🏻🌷</p>
+
+        <h3>🌸 Dua for Your Sisters</h3>
+        <p>May Allah bless all your sisters with happiness, health, success, and beautiful futures.</p>
+        <p>May He protect them from every difficulty, bad intention, evil eye, and every kind of harm. May Allah fulfill their halal wishes and bless them with righteous and sincere people in their lives. 🌙🌺</p>
+        <p>May Allah keep the love, respect, understanding, and bond between you and your sisters strong forever. May your family always remain united, peaceful, and full of happiness. 🤲🏻🌸</p>
+
+        <h3>🌙 A Special Dua for Our Friendship</h3>
+        <p>And Yashra, I have one very special dua for our friendship too.</p>
+        <p>May Allah always protect our beautiful bond. May He never allow misunderstandings, ego, jealousy, distance, or unnecessary problems to come between us.</p>
+        <p>If we ever misunderstand each other, may Allah give us the wisdom to understand, forgive, and communicate with one another. 🌿</p>
+        <p>May Allah keep trust, respect, sincerity, care, and understanding between us.</p>
+        <p>May our friendship always remain a source of happiness and goodness for both of us. And may Allah protect this bond from every kind of negativity and every evil eye. 🌙🌸</p>
+        <p>I pray that no matter how much life changes, how busy we become, or how many years pass, the respect and sincerity between us always remain the same. 🤍</p>
+        <p>May Allah keep our bond beautiful, peaceful, and sincere, and if it is good for both of us, may He allow this bond to remain strong throughout our lives. 🤲🏻🌷</p>
+
+        <h3>🤲🏻 My Dua for You</h3>
+        <p>Ya Allah,</p>
+        <p>
+          Bless Yashra with a beautiful life. 🌸<br>
+          Give her peace in her heart. 🌙<br>
+          Give her strength during difficult times.<br>
+          Give her happiness that never fades. 🌷<br>
+          Give her success beyond her expectations.<br>
+          Give her health and protect her from every illness and harm.<br>
+          Protect her from evil eye, jealousy, bad intentions, and negativity.<br>
+          Bless her with halal rizq and endless barakah.<br>
+          Increase her in knowledge and wisdom.<br>
+          Make her dreams come true if they are good for her.<br>
+          Give her righteous and sincere people around her.<br>
+          Keep her family safe, happy, and united.<br>
+          Bless her parents with health, peace, and a long life.<br>
+          Bless her sisters with happiness and success.<br>
+          And always keep her close to Your mercy and guidance. 🤲🏻🌙
+        </p>
+
+        <p><strong>Ameen Ya Rabb-ul-Alameen. 🌸</strong></p>
+
+        <p>Yashra, I hope this new year of your life brings you countless reasons to smile, beautiful memories, unexpected blessings, peaceful days, and opportunities that bring you closer to your dreams. 🌷✨</p>
+
+        <p>May every coming year make you wiser, stronger, happier, and closer to Allah.</p>
+
+        <p>Never forget how special and valuable you are. Keep your beautiful smile, keep your kind heart, and always believe that Allah has something beautiful planned for you. 🌙🌸</p>
+
+        <p class="closing">🎂 Happy Birthday once again, Yashra! 🎂</p>
+
+        <p>May Allah write your name among those who are successful in this world and successful in the Hereafter. 🤲🏻🌙</p>
+        <p>May He give you a life filled with Iman, Sabr, Shukr, happiness, success, peace, love, and barakah. 🌷</p>
+        <p>And may Allah always protect the beautiful bond we share and keep it sincere and strong. 🤍🌙</p>
+        <p>Stay blessed, stay happy, keep smiling, and always remain the beautiful person you are. 🌸✨</p>
+        <p>Happy Birthday, Yashra. May Allah bless every chapter of your life with something more beautiful than the last. 🌙🌷</p>
+        <p><strong>Ameen, Ya Allah. 🤲🏻✨</strong></p>
+
+        <p class="from">— From, Irfan Ali 🤍</p>
+      </article>
+    </section>
+  </main>
+
+  <div class="progress">
+    <span class="dot active-dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  </div>
+
+  <div class="petals" id="petals"></div>
+  <script src="script.js"></script>
+</body>
+</html>
